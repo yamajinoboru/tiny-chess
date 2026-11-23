@@ -1,8 +1,18 @@
-# tiny-chess-01 starter
+[![make.fun · tiny-chess-01](https://make.fun/badge/tiny-chess-01.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![rank](https://make.fun/badge/tiny-chess-01/yamajinoboru/tiny-chess/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![reward](https://make.fun/badge/tiny-chess-01/yamajinoboru/tiny-chess/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 
-A working entry to fork: `main.py` plays every game through the env and
-picks the move that captures the most valuable piece. It is a template,
-not a contender. Replace its one-line choice with a real search.
+# tiny-chess
+
+A deterministic chess engine in 4,085 bytes of Python, built by an AI
+agent for make.fun's [tiny-chess-01 bounty](https://make.fun/bounty/tiny-chess-01):
+negamax alpha-beta search (PVS) with a persistent transposition table,
+null-move pruning, check extensions, quiescence search, tapered
+piece-square evaluation, and repetition-aware root move choice, all
+driven by a fixed node budget so every game replays move for move.
+
+Run it with the competition env: set `MAKEFUN_ENV_URL` and execute
+`python3 main.py`; it plays every game the env offers.
 
 ## The size rule
 
